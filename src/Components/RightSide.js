@@ -29,7 +29,14 @@ const RightSide = (props) => {
             </div>
           </li>
         </FeedList>
+        <Recommandation>
+          View All Your Recommandations
+          <img src="/images/right-icon.svg" alt=""></img>
+        </Recommandation>
       </FollowCard>
+      <BannerCard>
+        <img src="/images/Linkedin-Profile.jpg" alt=""></img>
+      </BannerCard>
     </Container>
   );
 };
@@ -91,11 +98,30 @@ const FeedList = styled.ul`
 `;
 
 const Avatar = styled.div`
-  background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrcmcyxzoidwxms");
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M0,0v512h512V0H0z M462.452,462.452H49.548V49.548h412.903V462.452z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M371.613,231.226v-49.548h-41.29v-41.29h-49.548v41.29h-49.548v-41.29h-49.548v41.29h-41.29v49.548h41.29v49.548h-41.29 v49.548h41.29v41.29h49.548v-41.29h49.548v41.29h49.548v-41.29h41.29v-49.548h-41.29v-49.548H371.613z M280.774,280.774h-49.548 v-49.548h49.548V280.774z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
   background-size: contain;
   background-position: center;
   width: 48px;
   height: 48px;
+  margin-right: 8px;
+  border-radius: 50%;
+  opacity: 0.7;
+`;
+const Recommandation = styled.a`
+  color: #0a66c2;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 20px;
+`;
+
+const BannerCard = styled(FollowCard)`
+  img {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
 `;
 
 export default RightSide;
