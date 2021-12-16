@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { connect } from "react-redux";
 
 const Login = (props) => {
   return (
@@ -28,8 +29,6 @@ const Login = (props) => {
     </Container>
   );
 };
-
-export default Login;
 
 const Container = styled.div`
   padding: 0;
@@ -173,3 +172,11 @@ const Google = styled.button`
     border: 2px solid #0a66c2;
   }
 `;
+
+const mapStoreToProps = (state) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(mapDispatchToProps, mapDispatchToProps)(Login);
